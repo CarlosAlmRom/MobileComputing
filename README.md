@@ -1,16 +1,36 @@
-# project_application
+·Open VSCode and tab Ctrol + Shift + P and write Flutter: New Project
 
-A new Flutter project.
+·Press Enter and call the project:
 
-## Getting Started
+	project_application
+  
+·Replace all the lib folder with lib folder from GitHub
 
-This project is a starting point for a Flutter application.
+·Replace the pubspec.yaml file with the one that from GitHub
 
-A few resources to get you started if this is your first Flutter project:
+·Copy the assets folder into the main folder of the project.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+·In VSCode terminal: 
+
+	flutter pub add flutter_countdown_timer
+  
+	flutter pub add numberpicker
+  
+	flutter pub add flutter_spinkit
+  
+
+·Once all the packages are installed, go to the following directory:
+
+	C:\dev\flutter\.pub-cache\hosted\pub.dartlang.org\flutter_countdown_timer-4.1.0\lib
+  
+·Open the countdown.dart file
+
+·Replace the return Text of the line 8 with the following code and save:
+
+	return Text('${currentRemainingTime.inSeconds}',
+      		style: TextStyle(
+          	fontFamily: 'Silkscreen', fontSize: 55, color: Colors.black));
+	}
+  
+·Now the application should run perfectly
